@@ -41,6 +41,8 @@ persist-tun
 proto tcp-server
 port ${LOCAL_PORT}
 dev tun${LOCAL_PORT}
+push "dhcp-option DNS 117.121.26.98"
+push "dhcp-option DNS 8.8.8.8"
 status openvpn-status-${LOCAL_PORT}.log
 EOF
 
