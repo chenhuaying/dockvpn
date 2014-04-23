@@ -40,5 +40,5 @@ done
     exit 1
 }
 
-sudo docker run -e CLIENT_NAME=$CLIENT_NAME -e EXT_IP=$EXT_IP -e EXT_PORT=$EXT_PORT -v $CA_DIR:/etc/openvpn:rw -privileged symmetric/dockvpn new_client
+sudo docker run -e CLIENT_NAME=$CLIENT_NAME -e EXT_IP=$EXT_IP -e EXT_PORT=$EXT_PORT -v $CA_DIR:/etc/openvpn:rw --privileged tsing/openvpn new_client
 

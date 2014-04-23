@@ -33,5 +33,4 @@ while getopts ":i:p:d:h" o; do
     esac
 done
 
-sudo docker run -e LOCAL_IP=$LOCAL_IP -e LOCAL_PORT=$LOCAL_PORT -d -v $CA_DIR:/etc/openvpn:rw -privileged -p $LOCAL_PORT:$LOCAL_PORT/tcp symmetric/dockvpn
-
+sudo docker run -e LOCAL_IP=$LOCAL_IP -e LOCAL_PORT=$LOCAL_PORT -d -v $CA_DIR:/etc/openvpn:rw --privileged -p $LOCAL_PORT:$LOCAL_PORT/tcp tsing/openvpn
