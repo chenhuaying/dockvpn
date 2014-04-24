@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker run -sig-proxy=false -v /etc/openvpn:/etc/openvpn:rw -privileged -p 443:443/tcp symmetric/dockvpn
+sudo docker run -sig-proxy=false -v /etc/openvpn:/etc/openvpn:rw -privileged -p 443:443/tcp tsing/dockvpn
